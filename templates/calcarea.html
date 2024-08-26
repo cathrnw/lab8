@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}Calculate calcarea{% endblock %}
+{% block content %}
+
+<p>Enter a radius and click "submit" to calculate Area</p>
+
+<form action="/calcarea_result">
+  <p>Radius: <input type="number" name="r" value="20.0"></p>
+  <input type="submit" value="Submit">
+</form>
+
+{% endblock %}
